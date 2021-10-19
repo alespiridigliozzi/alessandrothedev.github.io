@@ -1,0 +1,46 @@
+@use "../../scss/variables" as *;
+
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    &__title {
+        font-size: 6rem;
+        font-family: $primary-font;
+        line-height: 110%;
+        position: absolute;
+        bottom: 10vh;
+        left: 0;
+
+        &--italic {
+            font-family: $secondary-font;
+            font-style: italic;
+            font-size: 7.5rem;
+        }
+    }
+
+    &__scroll-down {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        &--p {
+            text-transform: uppercase;
+            font-size: .75rem;
+            color: rgba(255, 255, 255, 0.150);
+            transform: rotate(90deg);
+        }
+
+        &--bar {
+            border-left: 1px solid rgba(255, 255, 255, 0.150);
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "../../scss/variables" as *;
+
+.navbar-container {
+    background-color: $background;
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    height: 10vh;
+    font-family: $primary-font;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 0 auto;
+
+    &__logo {
+        font-family: $secondary-font;
+        text-transform: none;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: 0.03em;
+    }
+
+    a, a:active {
+        color: $text-color;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,26 @@
+@use "../../scss/variables" as *;
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    height: 100vh;
+    gap: 1.5rem;
+
+    &__heading {
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    &__subheading {
+        font-size: 1.5rem;
+        font-weight: 200;
+        line-height: 2.4rem;
+
+        &--bolder {
+            font-weight: 500;
+        }
+    }
+}

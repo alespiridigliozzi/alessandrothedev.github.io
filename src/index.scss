@@ -15,6 +15,11 @@ body {
     a, a:active {
         color: $text-color;
         text-decoration: none;
+        transition: .4s;
+
+        &:hover {
+            color: $text-color--hover;
+        }
     }
 }
 

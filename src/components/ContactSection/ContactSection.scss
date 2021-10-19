@@ -1,0 +1,29 @@
+@use "../../scss/variables" as *;
+
+.contact-section {
+
+    height: 70vh;
+
+    &__headline {
+        font-size: 3rem;
+        font-weight: 300;
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 10vh;
+        padding-bottom: .8rem;
+    }
+
+    &__contacts {
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 3rem;
+
+        &--link {
+            text-decoration: underline;
+            transition: .4s;
+
+            &:hover {
+                color: $text-color--hover;
+            }
+        }
+    }
+}

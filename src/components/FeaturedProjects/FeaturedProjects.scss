@@ -1,9 +1,9 @@
 @use "../../scss/variables" as *;
 
 .featured-projects {
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30vh;
 
     &__headline {
         font-size: 3rem;

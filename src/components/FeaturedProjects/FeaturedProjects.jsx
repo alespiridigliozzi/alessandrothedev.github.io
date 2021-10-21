@@ -3,11 +3,12 @@ import Button from '../Button/Button'
 import { ProjectData } from '../../data/ProjectsData'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import "./FeaturedProjects.scss"
+import img from "../../assets/images/js-calculator.png"
 
 const FeaturedProjects = () => {
 
     const projectsList = ProjectData.map(project => {
-        return <ProjectCard key={project.title} title={project.title} image={project.image}/>
+        return <ProjectCard key={project.title} title={project.title} image={img}/>
     })
 
     return (

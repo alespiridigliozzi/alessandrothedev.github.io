@@ -11,8 +11,6 @@
     }
 
     &__img-container {
-        background-color: $background;
-        opacity: 85%;
         margin-bottom: 10px;
         overflow: hidden;
     }
@@ -22,7 +20,7 @@
         width: 100%;
         transition: transform 1.5s, filter 1.5s ease-in-out;
         transform-origin: center center;
-        filter: brightness(50%);
+        filter: brightness(70%);
 
         &:hover {
             filter: brightness(100%);

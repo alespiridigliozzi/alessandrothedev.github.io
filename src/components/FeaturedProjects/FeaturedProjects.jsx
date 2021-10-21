@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button from '../Button/Button'
 import { ProjectData } from '../../data/ProjectsData'
 import ProjectCard from '../ProjectCard/ProjectCard'
@@ -20,8 +21,10 @@ const FeaturedProjects = () => {
                 {projectsList}
             </div>
 
-            <Button buttonText="See More Projects"/>
-
+            <Link to="/projects">
+                <Button buttonText="See More Projects"/>
+            </Link>
+            
         </section>
     )
 }

@@ -8,28 +8,33 @@ import Projects from "./pages/Projects/Projects";
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
     <Router>
         <div className="App">
             <NavBar />
-                <Switch>
-                    <Route path="/about">
-                       <About />
-                    </Route>
+                <ScrollToTop>
+                    <Switch>
 
-                    <Route path="/projects">
-                        <Projects />
-                    </Route>
+                        <Route path="/about">
+                        <About />
+                        </Route>
 
-                    <Route exact path="/">
-                        <Header />
-                        <AboutSection />
-                        <FeaturedProjects />
-                        <ContactSection />
-                    </Route>
-                </Switch>                   
+                        <Route path="/projects">
+                            <Projects />
+                        </Route>
+
+                        <Route exact path="/">
+                            <Header />
+                            <AboutSection />
+                            <FeaturedProjects />
+                            <ContactSection />
+                        </Route>
+                        
+                    </Switch>   
+                </ScrollToTop>                
             <Footer />
         </div>
     </Router>

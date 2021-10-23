@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import ProjectDetails from './pages/ProjectDetails/ProjectDetails';
 
 function App() {
   return (
@@ -22,8 +23,12 @@ function App() {
                         <About />
                         </Route>
 
-                        <Route path="/projects">
+                        <Route exact path="/projects">
                             <Projects />
+                        </Route>
+
+                        <Route exact path="/project/:projectID">
+                            <ProjectDetails />
                         </Route>
 
                         <Route exact path="/">

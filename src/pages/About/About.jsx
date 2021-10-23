@@ -18,11 +18,32 @@ const About = () => {
 
                 Want to know more about me? <a className="about-page__content--link" href="mailto:spiridigliozzi.alessandro@gmail.com">Send me an email</a>.<br />Or connect with me on <a href="https://www.linkedin.com/in/alessandrospiridigliozzi/" target="_blank" className="about-page__content--link">LinkedIn</a> or <a href="https://github.com/alessandrothedev" target="_blank" className="about-page__content--link">Github</a>.
             </p>
-            <br /><br /><br /><br />
 
-            <h3 className="about-page__subheading">My Tech Skills</h3>
+            <div className="about-page__section">
+                <h3 className="about-page__subheading">My Tech Skills</h3>
 
-            <p className="about-page__subheading-content">HTML / CSS / JAVASCRIPT / SCSS / REACT JS / JAVA / GIT / UI DESIGN</p>
+                <ul className="about-page__skills">
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                    <li>React Js</li>
+                    <li>Sass/Scss</li>
+                    <li>Git/GitHub</li>
+                    <li>Java</li>
+                    <li>Node Js</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+
+            <div className="about-page__section">
+                <h3 className="about-page__subheading">My Education</h3>
+
+                <h4>Università degli Studi Della Tuscia, Viterbo, Italy</h4>
+                <p>Bachelor's of Arts in Modern Languages & Cultures (2016)</p>
+                    <br/>
+                <h4>PC Academy, Rome, Italy</h4>
+                <p>Diploma in Graphic Design (2020)</p>
+            </div>
 
         </section>
     )

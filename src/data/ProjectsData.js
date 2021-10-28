@@ -21,7 +21,7 @@ export const ProjectData = [
     {
         id: "morse-code",  
         title: "Morse Code Translator",
-        image: "https://raw.githubusercontent.com/alessandrothedev/morsecode/main/morsedecoder.png",
+        image: "https://raw.githubusercontent.com/alessandrothedev/morsecode/main/morsedecoder1.png",
         techStack: ['Html', 'Scss', 'JavaScript'],
         demo: "https://alessandrothedev.github.io/morsecode/",
         github: "https://github.com/alessandrothedev/morsecode",

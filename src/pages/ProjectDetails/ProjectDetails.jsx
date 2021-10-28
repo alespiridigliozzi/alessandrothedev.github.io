@@ -1,9 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import Button from '../../components/Button/Button'
 import "./ProjectDetails.scss"
 import data, { ProjectData } from '../../data/ProjectsData'
-import { Link } from 'react-router-dom'
 
 const ProjectDetails = (props) => {
 

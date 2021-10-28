@@ -1,13 +1,12 @@
 import React from 'react'
 import { ProjectData } from '../../data/ProjectsData'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
-import img from "../../assets/images/js-calculator.png"
 import "./Projects.scss"
 
 const Projects = () => {
 
     const projectsList = ProjectData.map(project => {
-        return <ProjectCard key={project.title} title={project.title} image={img} desc={project.desc} techStack={project.techStack}/>
+        return <ProjectCard key={project.title} title={project.title} image={project.image} desc={project.desc} techStack={project.techStack}/>
     })
 
     return (

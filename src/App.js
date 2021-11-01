@@ -10,8 +10,16 @@ import Header from './components/Header/Header';
 import NavBar from './components/NavBar/NavBar';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ProjectDetails from './pages/ProjectDetails/ProjectDetails';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+    AOS.init({
+        offset: 120,
+        duration: 400
+    });
+
   return (
     <Router>
         <div className="App">

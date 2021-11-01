@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ProjectData } from '../../data/ProjectsData'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import "./Projects.scss"
@@ -6,7 +7,11 @@ import "./Projects.scss"
 const Projects = () => {
 
     const projectsList = ProjectData.map(project => {
-        return <ProjectCard key={project.title} title={project.title} image={project.image} desc={project.desc} techStack={project.techStack}/>
+        return (
+            <Link to={`/project/${project.id}`} key={project.title}>
+                <ProjectCard title={project.title} image={project.image}/>
+            </Link>
+        )
     })
 
     return (

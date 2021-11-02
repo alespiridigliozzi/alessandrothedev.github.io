@@ -20,7 +20,8 @@
     font-family: $primary-font;
     font-weight: 300;
     text-transform: uppercase;
-    width: 80%;
+    width: 85%;
+    max-width: 1440px;
     margin: 0 auto;
 
     &__logo {

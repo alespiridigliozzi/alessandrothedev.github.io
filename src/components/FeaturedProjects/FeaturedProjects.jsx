@@ -1,14 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button from '../Button/Button'
 import { ProjectData } from '../../data/ProjectsData'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import "./FeaturedProjects.scss"
-import img from "../../assets/images/js-calculator.png"
 
 const FeaturedProjects = () => {
 
     const projectsList = ProjectData.map(project => {
-        return <ProjectCard key={project.title} title={project.title} image={img}/>
+        return (
+            <Link to={`/project/${project.id}`} key={project.title}>
+                <ProjectCard title={project.title} image={project.image}/>
+            </Link>
+        )
     })
 
     return (
@@ -20,8 +24,10 @@ const FeaturedProjects = () => {
                 {projectsList}
             </div>
 
-            <Button buttonText="See More Projects"/>
-
+            <Link to="/projects">
+                <Button buttonText="See More Projects"/>
+            </Link>
+            
         </section>
     )
 }

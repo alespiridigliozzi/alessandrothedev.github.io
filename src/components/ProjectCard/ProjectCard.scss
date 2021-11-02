@@ -11,18 +11,20 @@
     }
 
     &__img-container {
-        background-color: $background;
-        opacity: 85%;
         margin-bottom: 10px;
         overflow: hidden;
+        max-width: 40vw;
+        max-height: 40vw;
     }
 
     &__img {
-        object-fit: cover;
+        object-fit:contain;
+        background-size: cover;
         width: 100%;
+        min-height: 40vh;
         transition: transform 1.5s, filter 1.5s ease-in-out;
         transform-origin: center center;
-        filter: brightness(50%);
+        filter: brightness(70%);
 
         &:hover {
             filter: brightness(100%);

@@ -3,17 +3,26 @@
 .header {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    background-color: $background;
 
-    &__title {
-        font-size: 6.5rem;
-        font-family: $primary-font;
-        line-height: 110%;
+    h1 {
         position: absolute;
         bottom: 10vh;
         left: 0;
+        z-index: 11;
+        font-size: 6.5rem;
+        font-family: $primary-font;
+        color: $primary-color;
+        mix-blend-mode: difference;
+    }
+
+    &__title {
+        
+        line-height: 110%;
 
         &--italic {
             font-family: $secondary-font;

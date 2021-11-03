@@ -33,3 +33,12 @@
         }
     }
 }
+
+.prop-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 2.5rem 0;
+    text-align: left;
+    border-bottom: 1px solid $border-color;
+}

@@ -4,13 +4,21 @@ import "./Header.scss"
 const Header = () => {
     return (
         <header className="header">
-            <h1 
-            className="header__title"
-            >There is beauty<br/>in <span className="header__title--italic">simplicity</span>.</h1>
+
+            <h1>
+                <div className="header__title">
+                    <span>There is beauty</span>
+                </div>
+                <div className="header__title">
+                    <span>in <span className="header__title--italic">simplicity</span>.</span>
+                </div>
+            </h1>
+
             <div className="header__scroll-down">
                 <p className="header__scroll-down--p">Scroll Down</p>
                 <span className="header__scroll-down--bar"></span>
             </div>
+
         </header>
     )
 }

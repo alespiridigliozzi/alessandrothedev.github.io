@@ -21,13 +21,13 @@
     }
 
     &__title {
-        
         line-height: 110%;
 
         &--italic {
             font-family: $secondary-font;
             font-style: italic;
-            font-size: 8.5rem;
+            font-size: 6.7rem;
+            letter-spacing: .1rem;
         }
     }
 

@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Button from '../Button/Button'
 import "./AboutSection.scss"
 
 const AboutSection = () => {
@@ -8,17 +6,22 @@ const AboutSection = () => {
     return (
         <section className="about-section">
 
-            <h2 className="about-section__heading">Hello there<br />My name is Alessandro</h2>
+            <p className="about-section__text">
+            Ciao! I'm <b>Alessandro</b>, a London-based, Italian Software Engineer with a passion for <em><b>clean, minimalist design</b></em>.</p>
 
-            <p className="about-section__subheading">I am a Software Engineer with a passion for clean, minimalist design.<br />My philosophy? <span className="about-section__subheading--bolder">K</span>eep <span className="about-section__subheading--bolder">I</span>t <span className="about-section__subheading--bolder">S</span>imple <span className="about-section__subheading--bolder">S</span>tupid!
-            </p>
-            
-            <Link to="/projects">
-                <div>
-                 <Button buttonText="See My Work"/>
-                </div>
-            </Link>
+            <p className="about-section__text">
+            I fell in love with web development &#38; design when I was just 12 years-old and I started building web pages using a software called <em>Microsoft FrontPage</em>.</p>
 
+            <p className="about-section__text">
+            During my university years, I had to put web development aside. But since I moved to London in 2016, the urge to start coding again became stronger and stronger, until there was nothing else I could think about!</p>
+
+            <p className="about-section__text">
+            My tech stack includes:<br/> 
+            <em>HTML / CSS / SASS / SCSS / JAVASCRIPT / REACT /
+            GSAP / GITHUB / GIT / JAVA / MYSQL / FIGMA / ADOBE XD</em></p>
+{/* 
+            <p className="about-section__text">
+            Outside of work, I love watching films and tv shows, reading about design and tech, and chill out at home listening to music and cooking. I am really passionate about travelling and try to visit new places whenever I have the opportunity.</p> */}
         </section>
     )
 }

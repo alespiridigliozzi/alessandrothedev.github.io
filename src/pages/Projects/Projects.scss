@@ -6,11 +6,12 @@
     margin-bottom: 30vh;
 
     &__headline {
+        align-self: center;
+        margin-top: 30vh;
         font-size: 3rem;
         font-weight: 300;
-        border-bottom: 1px solid $border-color;
-        margin: 25vh 0 10vh;
-        padding-bottom: .8rem;
+        text-transform: uppercase;
+        font-family: $primary-font;
     }
 
     &__cta {
@@ -18,7 +19,7 @@
         line-height: 1.5;
         align-self: center;
         text-align: center;
-        padding-top: 15vw;
+        padding-top: 15vh;
 
         a {
             text-decoration: underline;
@@ -29,8 +30,7 @@
 
 .projects-page-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     justify-items: stretch;
-    gap: 5vw;
-    // margin-bottom: 10vh;
+    margin: 20vh 0 10vh 0;
 }

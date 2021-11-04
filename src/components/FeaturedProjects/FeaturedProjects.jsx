@@ -18,8 +18,6 @@ const FeaturedProjects = () => {
     return (
         <section className="featured-projects">
 
-            <h2 className="featured-projects__headline">Featured Projects</h2>
-
             <div className="featured-projects-grid">
                 {projectsList}
             </div>

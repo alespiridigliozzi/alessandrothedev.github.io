@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import AboutSection from './components/AboutSection/AboutSection';
 import ContactSection from './components/ContactSection/ContactSection';
 import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects';
-import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -17,7 +16,6 @@ import IntroOverlay from './components/IntroOverlay/IntroOverlay';
 function App() {
 
     useEffect(() => {
-
         gsap.to('body', {
             duration: 0,
             css: {
@@ -47,47 +45,45 @@ function App() {
             duration: 0,
             css: {
                 display: 'none'
+            },
+            onComplete: () => {
+                document.querySelector('.content').classList.remove('hidden')
+                document.querySelector('.footer-content').classList.remove('hidden')
+                document.getElementById('navbar-container').style.zIndex = '15'
             }
-        }).set('header h1', { css: { zIndex: 15 } })     
+        })    
     }, [])
   
 
-  return (
+    return (
     <Router>
-
         <IntroOverlay />
-        
         <div className="App">
-
             <NavBar />
                 <ScrollToTop>
                     <Switch>
-
-                        <Route path="/about">
-                        <About />
-                        </Route>
-
                         <Route exact path="/projects">
                             <Projects />
                         </Route>
-
                         <Route exact path="/project/:projectID">
                             <ProjectDetails />
                         </Route>
-
                         <Route exact path="/">
                             <Header />
-                            <AboutSection />
-                            <FeaturedProjects />
-                            <ContactSection />
-                        </Route>
-                        
+                            <div className="content hidden">
+                                <AboutSection />
+                                <FeaturedProjects />
+                                <ContactSection />
+                            </div>
+                        </Route>   
                     </Switch>   
-                </ScrollToTop>                
-            <Footer />
+                </ScrollToTop>      
+            <div className="footer-content hidden">          
+                <Footer />
+            </div>
         </div>
     </Router>
-  );
+    );
 }
 
 export default App;

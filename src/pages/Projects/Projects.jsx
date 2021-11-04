@@ -9,14 +9,15 @@ const Projects = () => {
     const projectsList = ProjectData.map(project => {
         return (
             <Link to={`/project/${project.id}`} key={project.title}>
-                <ProjectCard title={project.title} image={project.image}/>
+                <ProjectCard title={project.title}/>
             </Link>
         )
     })
 
     return (
         <div className="projects-page">
-           <h2 className="projects-page__headline">Projects</h2>
+
+            <h2 className="projects-page__headline">Projects I've Worked On</h2>
 
             <div className="projects-page-grid">
                 {projectsList}

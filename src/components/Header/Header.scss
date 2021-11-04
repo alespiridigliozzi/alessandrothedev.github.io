@@ -9,7 +9,7 @@
     position: relative;
     background-color: $background;
 
-    h1 {
+    &__headline {
         position: absolute;
         bottom: 10vh;
         left: 0;
@@ -21,13 +21,13 @@
     }
 
     &__title {
-        
         line-height: 110%;
 
         &--italic {
             font-family: $secondary-font;
             font-style: italic;
-            font-size: 8.5rem;
+            font-size: 6.7rem;
+            letter-spacing: .1rem;
         }
     }
 

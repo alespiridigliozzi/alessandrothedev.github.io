@@ -13,7 +13,7 @@ const AboutSection = () => {
             I fell in love with web development &#38; design when I was just 12 years-old and I started building web pages using a software called <em>Microsoft FrontPage</em>.</p>
 
             <p className="about-section__text">
-            During my university years, I had to put web development aside. But since I moved to London in 2016, the urge to start coding again became stronger and stronger, until there was nothing else I could think about!</p>
+            During my university years, I had to put web development aside, but since I moved to London in 2016, the urge to start coding again became stronger and stronger, until there was nothing else I could think about!</p>
 
             <p className="about-section__text">
             My tech stack includes:<br/> 

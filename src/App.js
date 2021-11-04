@@ -45,8 +45,13 @@ function App() {
             duration: 0,
             css: {
                 display: 'none'
+            },
+            onComplete: () => {
+                document.querySelector('.content').classList.remove('hidden')
+                document.querySelector('.footer-content').classList.remove('hidden')
+                document.getElementById('navbar-container').style.zIndex = '15'
             }
-        }).set('header h1', { css: { zIndex: 15 } })     
+        })    
     }, [])
   
 
@@ -65,13 +70,17 @@ function App() {
                         </Route>
                         <Route exact path="/">
                             <Header />
-                            <AboutSection />
-                            <FeaturedProjects />
-                            <ContactSection />
+                            <div className="content hidden">
+                                <AboutSection />
+                                <FeaturedProjects />
+                                <ContactSection />
+                            </div>
                         </Route>   
                     </Switch>   
-                </ScrollToTop>                
-            <Footer />
+                </ScrollToTop>      
+            <div className="footer-content hidden">          
+                <Footer />
+            </div>
         </div>
     </Router>
     );

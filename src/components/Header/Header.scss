@@ -1,4 +1,5 @@
 @use "../../scss/variables" as *;
+@use '../../scss/mixins' as *;
 
 .header {
     height: 100vh;
@@ -11,13 +12,21 @@
 
     &__headline {
         position: absolute;
-        bottom: 10vh;
+        bottom: 7vh;
         left: 0;
         z-index: 11;
         font-size: 6.5rem;
         font-family: $primary-font;
         color: $primary-color;
         mix-blend-mode: difference;
+
+        @include small-phone {
+            font-size: 3rem;
+        }
+
+        @include phone {
+            font-size: 4rem;
+        }
     }
 
     &__title {
@@ -26,8 +35,16 @@
         &--italic {
             font-family: $secondary-font;
             font-style: italic;
-            font-size: 6.7rem;
+            font-size: 7.7rem;
             letter-spacing: .1rem;
+
+            @include small-phone {
+                font-size: 3.5rem;
+            }
+
+            @include phone {
+                font-size: 4.5rem;
+            }
         }
     }
 
@@ -39,6 +56,18 @@
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+
+        @include small-phone {
+            display: none;
+        }
+
+        @include phone {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
 
         &--p {
             text-transform: uppercase;

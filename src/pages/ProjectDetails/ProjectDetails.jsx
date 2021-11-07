@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router'
 import "./ProjectDetails.scss"
-import data, { ProjectData } from '../../data/ProjectsData'
+import { ProjectData } from '../../data/ProjectsData'
 
 const ProjectDetails = (props) => {
 
@@ -38,7 +38,10 @@ const ProjectDetails = (props) => {
 
             <div className="project-details__description">
                 <h3>The Project:</h3>
-                <p>{singleProject.desc}</p>
+                <p>{singleProject.p1}</p>
+                <p>{singleProject.p2}</p>
+                <p>{singleProject.p3}</p>
+                <p>{singleProject.p4}</p>
             </div>
 
             

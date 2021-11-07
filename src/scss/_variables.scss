@@ -8,3 +8,11 @@ $border-color: rgba(255, 255, 255, 0.10);
 $text-color: rgba(186, 220, 255, 0.85);
 $primary-color: rgb(186, 220, 255);
 $text-color--hover: rgb(210, 232, 255);
+
+// MEDIA QUERIES BREAKPOINTS
+
+$breakpoint-small: 320px; //max-width
+$breakpoint-phone: 767px; //max-width
+$breakpoint-tablet: 768px; //min-width
+$breakpoint-laptop: 1024px; //min-width
+$breakpoint-desktop: 1600px; //min-width

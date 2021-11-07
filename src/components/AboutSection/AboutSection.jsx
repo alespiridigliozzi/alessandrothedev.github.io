@@ -6,7 +6,7 @@ const AboutSection = () => {
     return (
         <section className="about-section">
 
-            <p className="about-section__text">
+            <p className="about-section__text firstP">
             Ciao! I'm <b>Alessandro</b>, a London-based, Italian Software Engineer with a passion for <em><b>clean, minimalist design</b></em>.</p>
 
             <p className="about-section__text">
@@ -19,9 +19,7 @@ const AboutSection = () => {
             My tech stack includes:<br/> 
             <em>HTML / CSS / SASS / SCSS / JAVASCRIPT / REACT /
             GSAP / GITHUB / GIT / JAVA / MYSQL / FIGMA / ADOBE XD</em></p>
-{/* 
-            <p className="about-section__text">
-            Outside of work, I love watching films and tv shows, reading about design and tech, and chill out at home listening to music and cooking. I am really passionate about travelling and try to visit new places whenever I have the opportunity.</p> */}
+
         </section>
     )
 }

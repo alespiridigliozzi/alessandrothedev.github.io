@@ -33,6 +33,10 @@ function App() {
             ease: "power4.out",
             stagger: {
                 amount: 0.3
+            },
+            onStart: () => {
+                document.querySelector('.content').classList.add('hidden')
+                document.querySelector('.footer-content').classList.add('hidden')
             }
         }).to('.overlay-top', {
             duration: 1.6,
@@ -51,10 +55,9 @@ function App() {
                 document.querySelector('.footer-content').classList.remove('hidden')
                 document.getElementById('navbar-container').style.zIndex = '15'
             }
-        })    
+        })
     }, [])
-  
-
+      
     return (
     <Router>
         <IntroOverlay />
@@ -70,7 +73,7 @@ function App() {
                         </Route>
                         <Route exact path="/">
                             <Header />
-                            <div className="content hidden">
+                            <div className="content">
                                 <AboutSection />
                                 <FeaturedProjects />
                                 <ContactSection />
@@ -78,7 +81,7 @@ function App() {
                         </Route>   
                     </Switch>   
                 </ScrollToTop>      
-            <div className="footer-content hidden">          
+            <div className="footer-content">          
                 <Footer />
             </div>
         </div>

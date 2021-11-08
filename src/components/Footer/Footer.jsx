@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__logo"><Link to="/">Alessandro</Link></div>
             <div className="footer__links">
-                <a href="mailto:spiridigliozzi.alessandro@gmail.com">Email</a> / <a href="https://www.linkedin.com/in/alessandrospiridigliozzi/" target="_blank">LinkedIn</a> / <a href="https://github.com/alessandrothedev" target="_blank">Github</a>
+                <a href="mailto:spiridigliozzi.alessandro@gmail.com">Email</a> / <a href="https://www.linkedin.com/in/alessandrospiridigliozzi/" target="_blank" rel="noreferrer">LinkedIn</a> / <a href="https://github.com/alessandrothedev" target="_blank" rel="noreferrer">Github</a>
                 </div>
         </footer>
     )

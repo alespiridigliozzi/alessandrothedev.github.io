@@ -6,6 +6,14 @@
     flex-direction: column;
     margin-bottom: 40vh;
 
+    @include small-phone {
+        margin-bottom: 25vh;
+    }
+
+    @include phone {
+        margin-bottom: 25vh;
+    }
+
     button, a {
         align-self: center;
     }

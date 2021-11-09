@@ -6,6 +6,12 @@
     padding: 2.5rem 0;
     position: relative;
     overflow: hidden;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: $text-color;
+        color: $background;
+    }
 
     @include small-phone {
         padding: 1.2rem 0;
@@ -31,29 +37,4 @@
         }
     }
 
-    &__img-container {
-        position: relative;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        height: auto;
-        width: 100%;
-        transition: filter 1s ease-in;
-        filter: opacity(0%);
-
-        &:hover {
-            background-color: $primary-color;
-            filter: opacity(100%);
-            cursor: pointer;
-        }
-    }
 }

@@ -12,7 +12,6 @@ body {
     color: $text-color;
     font-size: 16px;
     font-family: $primary-font;
-    visibility: hidden;
 
     a, a:active {
         color: $text-color;
@@ -37,8 +36,4 @@ body {
     @include phone {
         width: 90%;
     }
-}
-
-.hidden {
-    display: none;
 }

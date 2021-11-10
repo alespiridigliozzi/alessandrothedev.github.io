@@ -12,34 +12,26 @@ import NavBar from './components/NavBar/NavBar';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ProjectDetails from './pages/ProjectDetails/ProjectDetails';
 import IntroOverlay from './components/IntroOverlay/IntroOverlay';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
 
     useEffect(() => {
-        gsap.to('body', {
-            duration: 0,
-            css: {
-                visibility: "visible"
-            }
-        })
-
         const tl = gsap.timeline()
 
         tl.from(".header__title", {
             delay: 0.5,
-            y: 350, 
-            duration: 2,
+            y: '110vh', 
+            duration: 1.2,
             skewY: 7,
             ease: "power4.out",
             stagger: {
                 amount: 0.3
-            },
-            onStart: () => {
-                document.querySelector('.content').classList.add('hidden')
-                document.querySelector('.footer-content').classList.add('hidden')
             }
         }).to('.overlay-top', {
-            duration: 1.6,
+            duration: 1,
             height: 0,
             ease: 'expo.inOut',
             stagger: {
@@ -51,8 +43,6 @@ function App() {
                 display: 'none'
             },
             onComplete: () => {
-                document.querySelector('.content').classList.remove('hidden')
-                document.querySelector('.footer-content').classList.remove('hidden')
                 document.getElementById('navbar-container').style.zIndex = '15'
             }
         })

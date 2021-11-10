@@ -2,12 +2,12 @@ export const ProjectData = [
     {
         id: "punk-api",  
         title: "BrewDog Punk Api - React",
-        image: "https://github.com/alexsp92/calculator/raw/main/js-calculator.png",
+        image: "https://raw.githubusercontent.com/alessandrothedev/punk-api/main/Screenshot%202021-11-09%20at%2016.24.55.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript', 'React'],
         demo: "https://alessandrothedev.github.io/punk-api/",
         github: "https://github.com/alessandrothedev/punk-api",
-        p1: "A React app that where users can browse the entire BrewDog beers catalogue.",
-        p2: "The app was created by fetching the Punk API",
+        p1: "A React JS app where users can browse the entire BrewDog beers catalogue.",
+        p2: "The app was created by fetching Brewdog's Punk API. Users are able to search their favourite beers by name and/or filter the results by volume of alcohol, bitterness or acidity level.",
         p3: "",
         p4: ""
     },

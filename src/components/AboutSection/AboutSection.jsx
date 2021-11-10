@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./AboutSection.scss"
 
 const AboutSection = () => {
@@ -16,9 +17,6 @@ const AboutSection = () => {
             <b>My tech stack</b><br/> 
             <em>HTML / CSS / SASS / SCSS / JAVASCRIPT / REACT /
             GSAP / GITHUB / GIT / JAVA / MYSQL / FIGMA / ADOBE XD</em></p>
-
-            <p className="about-section__text">
-            <em>Check out my projects </em> <i className="fas fa-chevron-down"></i> </p>
 
         </section>
     )

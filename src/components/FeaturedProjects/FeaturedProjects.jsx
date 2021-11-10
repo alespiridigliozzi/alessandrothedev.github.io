@@ -18,6 +18,10 @@ const FeaturedProjects = () => {
     return (
         <section className="featured-projects">
 
+            <p className="featured-projects__text">
+                <em>Check out my projects </em> <i className="fas fa-chevron-down"></i> 
+            </p>
+
             <div className="featured-projects-grid">
                 {projectsList}
             </div>

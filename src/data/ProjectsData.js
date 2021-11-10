@@ -1,5 +1,17 @@
 export const ProjectData = [
     {
+        id: "lujam",  
+        title: "LuJam Cyber - Dashboard",
+        image: "https://github.com/alessandrothedev/alessandrothedev.github.io/blob/main/src/assets/images/lujam.png?raw=true",
+        techStack: ['Html', 'Css', 'Scss', 'JavaScript', 'React', 'Firebase'],
+        demo: "https://lujam-jersey.web.app/",
+        github: "https://github.com/alessandrothedev/jersey-client-project",
+        p1: "This client project was created with React and Firebase, by my coworkers and I, as part of our software engineering course at _nology.io. The project demonstrated possible design changes for Lujams' dashboard redesign.",
+        p2: "The project ran for four weeks, with each week taking the form of a sprint with a new product owner assigned. Each sprint ended with a demo to the clients. The feedback informed the next sprint's tickets.",
+        p3: "Trello was used to manage the workflow. A git branching strategy was used to work on multiple features. Once a pull request was completed the feature would be added to the codebase.",
+        p4: "Each week I was paired with a different coworker and together, we worked on different tickets such as creating the App's components tree, filtering/searching through a list of devices, creating components to display additional info related to each single device by the use of query params, fixing media queries and layout bugs etc..."
+    },
+    {
         id: "punk-api",  
         title: "BrewDog Punk Api - React",
         image: "https://raw.githubusercontent.com/alessandrothedev/punk-api/main/Screenshot%202021-11-09%20at%2016.24.55.png",
@@ -25,7 +37,7 @@ export const ProjectData = [
     },
     {
         id: "morse-code",  
-        title: "JavaScript Morse Decoder",
+        title: "Morse Decoder",
         image: "https://raw.githubusercontent.com/alessandrothedev/morsecode/main/morsedecoder1.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript'],
         demo: "https://alessandrothedev.github.io/morsecode/",
@@ -37,7 +49,7 @@ export const ProjectData = [
     },
     {
         id: "js-trivia-quiz",  
-        title: "JavaScript Trivia Quiz",
+        title: "Trivia Quiz",
         image: "https://github.com/alessandrothedev/quiz/raw/main/jstriviapreview.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript'],
         demo: "https://alessandrothedev.github.io/quiz/",

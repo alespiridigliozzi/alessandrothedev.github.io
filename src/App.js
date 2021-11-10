@@ -63,11 +63,9 @@ function App() {
                         </Route>
                         <Route exact path="/">
                             <Header />
-                            <div className="content">
                                 <AboutSection />
                                 <FeaturedProjects />
                                 <ContactSection />
-                            </div>
                         </Route>   
                     </Switch>   
                 </ScrollToTop>      

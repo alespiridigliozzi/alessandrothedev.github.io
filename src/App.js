@@ -12,9 +12,6 @@ import NavBar from './components/NavBar/NavBar';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ProjectDetails from './pages/ProjectDetails/ProjectDetails';
 import IntroOverlay from './components/IntroOverlay/IntroOverlay';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 function App() {
 
@@ -58,14 +55,14 @@ function App() {
                         <Route exact path="/projects">
                             <Projects />
                         </Route>
-                        <Route exact path="/project/:projectID">
+                        <Route path="/project/:projectID">
                             <ProjectDetails />
                         </Route>
                         <Route exact path="/">
                             <Header />
-                                <AboutSection />
-                                <FeaturedProjects />
-                                <ContactSection />
+                            <AboutSection />
+                            <FeaturedProjects />
+                            <ContactSection />
                         </Route>   
                     </Switch>   
                 </ScrollToTop>      

@@ -7,10 +7,10 @@ const Header = () => {
 
             <h1 className="header__headline">
                 <div className="header__title">
-                    <span>There is beauty</span>
+                    <span className="header__subtitle">Ciao! I'm Alessandro.</span>
                 </div>
                 <div className="header__title">
-                    <span>in <span className="header__title--italic">simplicity</span>.</span>
+                    <span>A Software Engineer with a passion for clean, minimalist design.</span>
                 </div>
             </h1>
 

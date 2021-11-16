@@ -7,7 +7,7 @@ import "./FeaturedProjects.scss"
 
 const FeaturedProjects = () => {
 
-    const projectsList = ProjectData.map(project => {
+    const projectsList = ProjectData.slice(0, 4).map(project => {
         return (
             <Link to={`/project/${project.id}`} key={project.title}>
                 <ProjectCard title={project.title} image={project.image}/>

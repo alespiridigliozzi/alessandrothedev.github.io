@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom';
 import { gsap } from "gsap";
 import AboutSection from './components/AboutSection/AboutSection';
 import ContactSection from './components/ContactSection/ContactSection';
@@ -46,7 +46,7 @@ function App() {
     }, [])
       
     return (
-    <Router>
+    <HashRouter>
         <IntroOverlay />
         <div className="App">
             <NavBar />
@@ -70,7 +70,7 @@ function App() {
                 <Footer />
             </div>
         </div>
-    </Router>
+    </HashRouter>
     );
 }
 

@@ -26,7 +26,7 @@ export const ProjectData = [
     {
         id: "js-calculator",    
         title: "JavaScript Calculator",
-        image: "https://github.com/alexsp92/calculator/raw/main/js-calculator.png",
+        image: "https://github.com/alessandrothedev/alessandrothedev.github.io/blob/main/src/assets/images/calculatorimg.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript'],
         demo: "https://alessandrothedev.github.io/calculator/",
         github: "https://github.com/alessandrothedev/calculator",

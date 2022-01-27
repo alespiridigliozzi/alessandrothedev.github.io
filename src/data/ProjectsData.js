@@ -2,7 +2,7 @@ export const ProjectData = [
     {
         id: "lujam",  
         title: "LuJam Cyber - Dashboard",
-        image: "https://github.com/alessandrothedev/alessandrothedev.github.io/blob/main/src/assets/images/lujam.png?raw=true",
+        image: "https://raw.githubusercontent.com/alessandrothedev/alessandrothedev.github.io/main/src/assets/images/lujamimg.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript', 'React', 'Firebase'],
         demo: "https://lujam-jersey.web.app/",
         github: "https://github.com/alessandrothedev/jersey-client-project",
@@ -13,8 +13,8 @@ export const ProjectData = [
     },
     {
         id: "punk-api",  
-        title: "BrewDog Punk Api - React",
-        image: "https://raw.githubusercontent.com/alessandrothedev/punk-api/main/Screenshot%202021-11-09%20at%2016.24.55.png",
+        title: "BrewDog's Punk Api",
+        image: "https://raw.githubusercontent.com/alessandrothedev/alessandrothedev.github.io/main/src/assets/images/punkimg.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript', 'React'],
         demo: "https://alessandrothedev.github.io/punk-api/",
         github: "https://github.com/alessandrothedev/punk-api",
@@ -38,7 +38,7 @@ export const ProjectData = [
     {
         id: "morse-code",  
         title: "Morse Decoder",
-        image: "https://raw.githubusercontent.com/alessandrothedev/morsecode/main/morsedecoder1.png",
+        image: "https://raw.githubusercontent.com/alessandrothedev/alessandrothedev.github.io/main/src/assets/images/morseimg.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript'],
         demo: "https://alessandrothedev.github.io/morsecode/",
         github: "https://github.com/alessandrothedev/morsecode",
@@ -50,7 +50,7 @@ export const ProjectData = [
     {
         id: "js-trivia-quiz",  
         title: "Trivia Quiz",
-        image: "https://github.com/alessandrothedev/quiz/raw/main/jstriviapreview.png",
+        image: "https://raw.githubusercontent.com/alessandrothedev/alessandrothedev.github.io/main/src/assets/images/quizimg.png",
         techStack: ['Html', 'Css', 'Scss', 'JavaScript'],
         demo: "https://alessandrothedev.github.io/quiz/",
         github: "https://github.com/alessandrothedev/quiz",

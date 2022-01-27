@@ -56,7 +56,18 @@
 
 .projects-page-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: stretch;
-    margin: 20vh 0 10vh 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 5vw;
+    margin: 5vh 0 15vh;
+
+    @include small-phone {
+        grid-template-columns: 1fr;
+        margin-bottom: 7vh;
+    }
+
+    @include phone {
+        grid-template-columns: 1fr;
+        margin-bottom: 7vh;
+    }
 }

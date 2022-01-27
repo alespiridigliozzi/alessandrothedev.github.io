@@ -9,7 +9,7 @@ const Projects = () => {
     const projectsList = ProjectData.map(project => {
         return (
             <Link to={`/project/${project.id}`} key={project.title}>
-                <ProjectCard title={project.title}/>
+                <ProjectCard title={project.title} image={project.image}/>
             </Link>
         )
     })

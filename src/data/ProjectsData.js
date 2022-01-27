@@ -6,10 +6,22 @@ export const ProjectData = [
         techStack: ['Html', 'Css', 'Scss', 'JavaScript', 'React', 'Firebase'],
         demo: "https://lujam-jersey.web.app/",
         github: "https://github.com/alessandrothedev/jersey-client-project",
-        p1: "This client project was created with React and Firebase, by my coworkers and I, as part of our software engineering course at _nology.io. The project demonstrated possible design changes for Lujams' dashboard redesign.",
+        p1: "This client project was created with React and Firebase, by my coworkers and I, as part of our software engineering course at _nology.io. The project demonstrated possible design changes for LuJams' dashboard redesign.",
         p2: "The project ran for four weeks, with each week taking the form of a sprint with a new product owner assigned. Each sprint ended with a demo to the clients. The feedback informed the next sprint's tickets.",
         p3: "Trello was used to manage the workflow. A git branching strategy was used to work on multiple features. Once a pull request was completed the feature would be added to the codebase.",
         p4: "Each week I was paired with a different coworker and together, we worked on different tickets such as creating the App's components tree, filtering/searching through a list of devices, creating components to display additional info related to each single device by the use of query params, fixing media queries and layout bugs etc..."
+    },
+    {
+        id: "dailee",  
+        title: "Dailee",
+        image: "https://raw.githubusercontent.com/alessandrothedev/alessandrothedev.github.io/main/src/assets/images/daileeimg.png",
+        techStack: ['Html', 'Css', 'Scss', 'JavaScript', 'React'],
+        demo: "https://alessandrothedev.github.io/dailee/",
+        github: "https://github.com/alessandrothedev/dailee",
+        p1: "This project was created with React and uses two different APIs to display various types of data to the user, such as live, top headlines from news blogs around the world, and the current weather forecast using the user's browser location.",
+        p2: "",
+        p3: "",
+        p4: ""
     },
     {
         id: "punk-api",  
